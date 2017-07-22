@@ -1,11 +1,11 @@
-import RPi.GPIO as gpio
+import RPi.GPIO as GPIO
 import time
 
-gpio.setmode(gpio.BCM)
-gpio.setup(14, gpio.OUT)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(14, GPIO.OUT)
 
 while(True):
-  gpio.output(14,gpio.HIGH)
+  GPIO.output(14,GPIO.HIGH)
   time.sleep(5)
-  gpio.output(14,gpio.LOW)
+  GPIO.output(14,GPIO.LOW)
   time.sleep(5)
